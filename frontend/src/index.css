@@ -130,7 +130,7 @@ img.large {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: 55rem;
     width: 34rem;
     border: 0.1rem black;
     background-color: rgb(227, 236, 240);
@@ -159,6 +159,19 @@ img.large {
 .success {
     color: #1a801a;
 }
-  .error {
+.danger {
     color: #a02020;
+  }
+.alert {
+    padding: 1rem;
+    border: 0.1rem solid transparent;
+    border-radius: 0.5rem;
+}
+.alert-info {
+    color: #2020a0;
+    background-color: #e0e0ff;
+}
+.alert-danger {
+    color: #a02020;
+    background-color: #ffe0e0;
 }

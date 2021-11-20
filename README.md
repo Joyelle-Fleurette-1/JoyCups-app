@@ -45,10 +45,29 @@
    3. Add .js to imports
    4. npm install express
    5. create server.js
-   6. add start command as node backend/server.js
+   6. add start command as node backend/server.js for rerun whenever there is a change
    7. require express
    8. create route for / return backend is ready.
    9. move products.js from frontend to backend
    10. create route for /api/products
    11. return products
    12. run npm start
+   13. npm install --save-dev nodemon --registry http://registry.npmjs.org/
+8. Load Products From Backend
+   1. add "proxy": "http://127.0.0.1:5000" in frontend package.json
+   2. cd frontend and npm install axios --registry http://registry.npmjs.org/
+   3. edit HomeScreen.js
+   4. define products, loading and error.
+   5. create useEffect
+   6. define async fetchData and call it
+   7. get data from /api/products
+   8. show them in the list
+   9. create Loading Component
+   10. create Message Box Component
+   11. use them in HomeScreen
+9. 1. install VScode eslint extemsion 
+   2. npm install -D eslint --registry http://registry.npmjs.org/ for code linting
+   3. Run ./node_modules/.bin/eslint --init
+   4. npm install eslint-plugin-react@latest --save --registry http://registry.npmjs.org/
+   5. Re-run ./node_modules/.bin/eslint --init the error will be fixed
+   6. 
