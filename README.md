@@ -65,9 +65,26 @@
    9. create Loading Component
    10. create Message Box Component
    11. use them in HomeScreen
-9. 1. install VScode eslint extemsion 
+9. Eslint for code linting
+   1. Install VScode eslint extension 
    2. npm install -D eslint --registry http://registry.npmjs.org/ for code linting
    3. Run ./node_modules/.bin/eslint --init
    4. npm install eslint-plugin-react@latest --save --registry http://registry.npmjs.org/
    5. Re-run ./node_modules/.bin/eslint --init the error will be fixed
-   6. 
+   6. Create ./frontend/.env and add SKIP_PREFLIGHT_CHECK=true
+10. Add redux to Home Screen to manage the state of our react application
+   1. npm install redux react-redux
+   2. Create store.js
+   3. initState= {products:[]}
+   4. reducer = (state, action) => switch LOAD_PRODUCTS: {products: action.payload}
+   5. export default createStore(reducer, initState)
+   6. Edit HomeScreen.js
+   7. shopName = useSelector(state=>state.products)
+   8. const dispatch = useDispatch()
+   9. useEffect(()=>dispatch({type: LOAD_PRODUCTS, payload: data})
+   10. Add store to index.js
+11. Add Redux to Product Screen
+   1. create product details constants, actions and reducers
+   2. add reducer to store.js
+   3. use action in ProductScreen.js
+   4. add /api/product/:id to backend api
