@@ -88,3 +88,90 @@
    2. add reducer to store.js
    3. use action in ProductScreen.js
    4. add /api/product/:id to backend api
+   5. npm install redux-thunk --registry http://registry.npmjs.org/
+12. Handle Add To Cart Button
+   1. Handle Add To Cart in ProductScreen.js
+   2. create CartScreen.js
+13. Implement Add to Cart Action
+   1. create addToCart constants, actions and reducers
+   2. add reducer to store.js
+   3. use action in CartScreen.js
+   4. render cartItems.length
+14. Build Cart Screen
+   1. create 2 columns for cart items and cart action
+   2. cartItems.length === 0 ? cart is empty
+   3. show item image, name, qty and price
+   4. Proceed to Checkout button
+   5. Implement remove from cart action
+15. Implement Remove From Cart Action
+   1. create removeFromCart constants, actions and reducers
+   2. add reducer to store.js
+   3. use action in CartScreen.js
+16. Create Sample Users In MongoDB
+   1. npm install mongoose
+   2. npm install bcrypt for password security
+   3. connect to mongodb
+   4. create config.js
+   5. npm install dotenv
+   6. export MONGODB_URL
+   7. create models/userModel.js
+   8. create userSchema and userModel
+   8. create userRoute
+   9. Seed sample data
+17. Create Sample Products In MongoDB
+   1. create models/productModel.js
+   2. create productSchema and productModel
+   3. create productRoute
+   4. Seed sample data
+18. Create Sign-in Backend
+   1. create /signin api
+   2. check email and password
+   3. generate token
+   4. install json web token
+   5. install dotenv
+   6. return token and data
+   7. test it using postman
+19. Design SignIn Screen
+   1. create SigninScreen
+   2. render email and password fields
+   3. create signin constants, actions and reducers
+   4. Update Header based on user login
+20. Implement SignIn Action
+   1. create signin constants, actions and reducers
+   2. add reducer to store.js
+   3. use action in SigninScreen.js
+21. Create Register Screen
+   1. create API for /api/users/register
+   2. insert new user to database
+   3. return user info and token
+   4. create RegisterScreen
+   5. Add fields
+   6. Style fields
+   7. Add screen to App.js
+   8. create register action and reducer
+   9. check validation and create user
+22. Create Shipping Screen
+   1. create CheckoutSteps.js component
+   2. create shipping fields
+   3. implement shipping constant, actions and reducers
+23. Create Payment Screen
+   1. create payment fields
+   2. implement shipping constant, actions and reducers
+24. Design Place Order Screen
+   1. design order summary fields
+   2. design order action
+25. Create Place Order API
+   1. createOrder api
+   2. create orderModel
+   3. create orderRouter
+   4. create post order route
+26. Implement PlaceOrder Action
+   1. handle place order button click
+   2. create place order constants, action and reducer
+27. Create Order Screen
+   1. build order api for /api/orders/:id
+   2. create OrderScreen.js
+   3. dispatch order details action in useEffect
+   4. load data with useSelector
+   5. show data like place order screen
+   6. create order details constant, action and reducer

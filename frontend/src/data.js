@@ -1,4 +1,20 @@
-export default {
+import bcrypt from 'bcryptjs';
+
+const data = {
+  users: [
+    {
+      name: 'Joyelle',
+      email: 'joyfleurndikumana@gmail.com',
+      password: bcrypt.hashSync('1234', 8),
+      isAdmin: true,
+    },
+    {
+      name: 'Elvis',
+      email: 'user@example.com',
+      password: bcrypt.hashSync('1234', 8),
+      isAdmin: false,
+    },
+  ],
     products: [{
         _id: 1,
         name: "Pink Polka Dot Disposable Paper Cups - Pack of 10 - 200ml",
@@ -222,4 +238,5 @@ export default {
         description: "NEW BELLY DESIGN: These steel tea cups come in a nice and new Narrow Belly shaped design which gives a fresh look to your cups for tea. \n STRONG MATERIAL: These cups for tea are made up from High Quality Stainless Steel, which is known for its durability and strength. \n NON BREAKABLE: As the cups are made from stainless steel, these will not break even after getting dropped any number of times.",
     },
     ]
-}
+};
+export default data;
